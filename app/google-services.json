@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "511211469815",
+    "project_id": "borrowbook-1c4d5",
+    "storage_bucket": "borrowbook-1c4d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511211469815:android:48ed77b983d10d77e10cf2",
+        "android_client_info": {
+          "package_name": "com.example.charm.borrowbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511211469815-u2b6o4sav11ib8r3co66psq2pf3fnoup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.charm.borrowbook",
+            "certificate_hash": "c9b83a61402b8aea11263a7cbbce0073cfdb3e98"
+          }
+        },
+        {
+          "client_id": "511211469815-2lu0og3i6rhc1en08uf7v5fmmca0b2a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL82hpy2fE_CfOk9eGxkYpU2WtR1ga8Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511211469815-2lu0og3i6rhc1en08uf7v5fmmca0b2a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

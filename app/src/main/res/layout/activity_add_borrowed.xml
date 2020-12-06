@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBorrowedActivity">
+
+    <EditText
+        android:id="@+id/et_brTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Book Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_brAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Book Author"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/et_brTitle" />
+
+    <EditText
+        android:id="@+id/et_brPubYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Published Year"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/et_brAuthor" />
+
+    <EditText
+        android:id="@+id/et_brISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="ISBN"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/et_brPubYear" />
+
+    <Spinner
+        android:id="@+id/sp_brLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_brLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_brLanguage"
+        app:layout_constraintTop_toTopOf="@+id/tv_brLanguage" />
+
+    <Spinner
+        android:id="@+id/sp_brGenre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_brGenre"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brLanguage" />
+
+    <EditText
+        android:id="@+id/et_brSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Book Series"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_brSeries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_brSeries"
+        app:layout_constraintTop_toTopOf="@+id/tv_brSeries" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:onClick="btn_add_clicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_brLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Language:"
+        android:ems="5"
+        app:layout_constraintEnd_toStartOf="@+id/sp_brLanguage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_brISBN" />
+
+    <TextView
+        android:id="@+id/tv_brGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Genre:"
+        android:ems="5"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_brGenre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sp_brGenre" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="102dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_brLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty_book" />
+
+    <TextView
+        android:id="@+id/tv_brSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Book Series: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brGenre" />
+
+    <TextView
+        android:id="@+id/tv_brBorrow_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(select date)"
+        android:ems="5"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_brBorrow_date"
+        app:layout_constraintStart_toEndOf="@+id/tv_brBorrow_dateTime_label"
+        app:layout_constraintTop_toTopOf="@+id/iv_brBorrow_date" />
+
+    <TextView
+        android:id="@+id/tv_brBorrow_dateTime_label"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="6"
+        android:text="Borrow Date/Time: "
+        app:layout_constraintBottom_toBottomOf="@+id/tv_brBorrow_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_brBorrow_date" />
+
+    <ImageView
+        android:id="@+id/iv_brBorrow_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="iv_brBorrow_date_clicked"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_brBorrow_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_brBorrow_date"
+        app:layout_constraintTop_toTopOf="@+id/tv_brBorrow_time"
+        app:srcCompat="@drawable/ic_date" />
+
+    <TextView
+        android:id="@+id/tv_brBorrow_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(select time)"
+        android:ems="4"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_brBorrow_time"
+        app:layout_constraintStart_toEndOf="@+id/iv_brBorrow_date"
+        app:layout_constraintTop_toTopOf="@+id/iv_brBorrow_time" />
+
+    <ImageView
+        android:id="@+id/iv_brBorrow_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="iv_brBorrow_time_clicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_brBorrow_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brSeries"
+        app:srcCompat="@drawable/ic_time" />
+
+    <TextView
+        android:id="@+id/tv_brReturn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(select date)"
+        android:ems="5"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_brReturn_date"
+        app:layout_constraintStart_toEndOf="@+id/tv_brReturn_dateTime_label"
+        app:layout_constraintTop_toTopOf="@+id/iv_brReturn_date" />
+
+    <TextView
+        android:id="@+id/tv_brReturn_dateTime_label"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="6"
+        android:text="Return Date/Time: "
+        app:layout_constraintBottom_toBottomOf="@+id/tv_brReturn_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_brReturn_date" />
+
+    <ImageView
+        android:id="@+id/iv_brReturn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="iv_brReturn_date_clicked"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_brReturn_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_brReturn_date"
+        app:layout_constraintTop_toTopOf="@+id/tv_brReturn_time"
+        app:srcCompat="@drawable/ic_date" />
+
+    <TextView
+        android:id="@+id/tv_brReturn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(select time)"
+        android:ems="4"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_brReturn_time"
+        app:layout_constraintStart_toEndOf="@+id/iv_brReturn_date"
+        app:layout_constraintTop_toTopOf="@+id/iv_brReturn_time" />
+
+    <ImageView
+        android:id="@+id/iv_brReturn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="iv_brReturn_time_clicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_brReturn_time"
+        app:layout_constraintTop_toBottomOf="@+id/iv_brBorrow_time"
+        app:srcCompat="@drawable/ic_time" />
+
+
+</android.support.constraint.ConstraintLayout>
